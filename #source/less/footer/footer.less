@@ -1,0 +1,242 @@
+.footer{
+  width: @desktop-width;
+  background-color: @color-default;
+  box-sizing: border-box;
+  padding: 70px 0 12px 0;
+  margin: 83px auto 0 auto;
+  &__top{
+    width: @content-width;
+    margin: 0 auto 0 auto;
+    box-sizing: border-box;
+    padding: 0 0 62px 0;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #3f3a41;
+  }
+  &__company{
+    width: 330px;
+    box-sizing: border-box;
+    padding: 0 10px 0 0;
+  }
+  &__title{
+    margin: 0 0 11px 0;
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.17em;
+    word-wrap: break-word;
+    }
+  &__ul{
+    margin: 28px 0 0 0;
+    list-style: none;
+    padding: 0 0 0 0;
+  }
+  &__link{
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    word-wrap: break-word;
+  }
+  &__link:hover{
+    color: @color-hover;
+  }
+  &__catalog{
+    width: 330px;
+    box-sizing: border-box;
+    padding: 0 10px 0 0;
+  }
+  &__contacts{
+    width: 330px;
+    box-sizing: border-box;
+    padding: 0 10px 0 0;
+  }
+  &__contactsPhone{
+    margin: 0 0 0 0;
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    word-wrap: break-word;
+  }
+  &__contactsPhone:hover{
+    color: @color-hover;
+  }
+  &__messengers{
+    margin: 23px 0 11px 0;
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    word-wrap: break-word;
+    background-image: url("../img/messengers1.png");
+    background-size: 60px 26px;
+    background-repeat: no-repeat;
+    background-position: 148px 4px;
+    padding: 0 82px 0 0;
+  }
+  &__workTime{
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    word-wrap: break-word;
+    margin: 0 0 18px 0;
+  }
+  &__contactsPhoneLink{
+    display: block;
+    margin: 0px 0 0px 0;
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    word-wrap: break-word;
+    background-repeat: no-repeat;
+    padding: 0 0 0 30px;
+  }
+  &__contactsPhoneLink:hover{
+    color: @color-hover;
+  }
+  &__contactsPhoneLinkCall{
+    background-image: url("../img/Call.png");
+    background-size: 9px 11px;
+    background-position: 2px 11px;
+  }
+  &__contactsPhoneLinkMail{
+    background-image: url("../img/Mail.png");
+    background-size: 14px 11px;
+    background-position: 0px 11px;
+  }
+  &__contactsPhoneLinkSkype{
+    background-image: url("../img/Skype.png");
+    background-size: 8px 10px;
+    background-position: 2px 12px;
+  }
+
+  &__subscribe{
+    width: 310px;
+  }
+  &__form{
+    min-height: 100px;
+  }
+  &__input{
+    height: 55px;
+    width: 310px;
+    border: none;
+    border-bottom: 2px solid @color-hover;
+    cursor: pointer;
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding: 0 0 0 0;
+    background-color: @color-default;
+    margin: 0 0 0 0;
+  }
+  &__input:focus{
+    outline: none;
+  }
+  &__input:hover ~ .header__middleButton{
+    opacity: 0.6;
+  }
+  &__input::placeholder{
+    font-variant: small-caps;
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.18em;
+  }
+  &__button{
+    border: none;
+    background-color: @color-default;
+    color: @color-hover;
+    font-family: @font-default;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.06em;
+    position: relative;
+    top:18px;
+    left: 206px;
+    padding: 0 0 0 0;
+    cursor: pointer;
+  }
+  &__button:hover{
+    color: @bg-color-default;
+  }
+  &__instagram{
+    display: block;
+    margin: 50px 0 0px 0;
+    padding: 10px 0 15px 71px;
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    word-wrap: break-word;
+    background-repeat: no-repeat;
+    background-image: url("../img/inst.png");
+    background-size: 48px 48px;
+    background-position: 0 0;
+  }
+  &__instagram:hover{
+    color: @color-hover;
+  }
+  &__bottom{
+    width: @content-width;
+    min-height: 110px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  &__copyright{
+    margin: 0 0 5px 0;
+  }
+  &__devCompany{
+    margin: 0 40px 5px 0;
+    padding: 0 0 0 33px;
+    background-repeat: no-repeat;
+    background-image: url("../img/devCompany.png");
+    background-size: 15px 20px;
+    background-position: 2px 5px;
+  }
+}

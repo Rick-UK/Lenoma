@@ -1,0 +1,132 @@
+.slider{
+  width: @desktop-width;
+  box-sizing: border-box;
+  padding: 62px 70px 52px 70px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+  &__wrap{
+    width: @content-width;
+    height: 487px;
+    position: relative;
+  }
+  &__item{
+    height: 487px;
+    background-image: url("../img/slider__promo.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 1080px 487px;
+    position: relative;
+  }
+  &__itemTitle{
+    position: absolute;
+    top: 137px;
+    left: -2px;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 56px;
+    line-height: 66px;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.12em;
+    margin: 0 0 0 0;
+    word-break: break-all;
+  }
+  &__itemTitleBrend{
+    letter-spacing: 0.1em;
+  }
+  .slider__item .slider__itemImg{
+    width: 110px;
+    height: 278px;
+    position: absolute;
+    top: 22%;
+    right: 37%;
+  }
+  &__itemPrice{
+    position: absolute;
+    top: 324px;
+    right: 356px;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+  &__itemMore{
+    position: absolute;
+    top: 335px;
+    left: 0px;
+    color: @color-hover;
+    font-family: @font-default;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    font-variant: small-caps;
+    letter-spacing: 0.17em;
+    text-decoration: none;
+  }
+  &__itemMore:hover{
+    color: @color-default;
+  }
+  &__itemMore::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 218px;
+    border: 1px solid @color-hover;
+  }
+  &__recomend{
+    width: 330px;
+    position: absolute;
+    top: 42px;
+    right: 50px;
+    background-color: #f9f9f9;
+    box-shadow: -33px 28px 54px rgba(36, 25, 5, 0.05);
+    z-index: 5;
+    box-sizing: border-box;
+    padding: 40px 46px 46px 46px;
+  }
+  &__recomendTitle{
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    font-variant: small-caps;
+    letter-spacing: 0.12em;
+    margin: 0 0 71px 0;
+    word-break: break-all;
+  }
+  &__recomendTitle::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 95px;
+    left: 48px;
+    width: 330px;
+    border: 1px solid @color-hover;
+  }
+  &__recomendMenu{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+  }
+  &__recomendList{
+    list-style: none;
+  }
+  &__recomendLink{
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    word-break: break-all;
+  }
+  &__recomendLink:hover{
+    color: @color-hover-two;
+  }
+}

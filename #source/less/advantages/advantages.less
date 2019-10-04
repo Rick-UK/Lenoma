@@ -1,0 +1,37 @@
+.advantages{
+  width: @desktop-width;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 70px 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  &__wrap{
+    width: 310px
+  }
+  &__text{
+    word-break: break-all;
+    padding: 14px 0 14px 110px;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    font-variant: small-caps;
+    letter-spacing: 0.2em;
+    position: relative;
+  }
+  &__text::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background-color: @shadow-color;
+  }
+}

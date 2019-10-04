@@ -1,0 +1,117 @@
+.news{
+  width: @content-width;
+  margin: 0 auto;
+  &__title{
+    text-align: center;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    margin: 113px 0 50px 0;
+  }
+  &__titleBorder{
+    padding: 0 50px 15px 50px;
+    border-bottom: 2px solid @color-hover;
+  }
+  &__block{
+    display: flex;
+    box-sizing: border-box;
+    padding: 45px 0 0 0;
+  }
+  &__blockLeft{
+    width: 650px;
+  }
+  &__leftItem{
+    width: 585px;
+    border-bottom: 1px solid @shadow-color;
+    margin: 0 0 34px 0;
+  }
+  &__itemTitle{
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin: 0 0 14px 0;
+    z-index: 5;
+    position: relative;
+    word-wrap: break-word;
+  }
+  &__data{
+    color: @color-hover;
+    font-family: @font-default;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    z-index: 5;
+    position: relative;
+  }
+
+  &__text{
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 12px 0 28px 0;
+    z-index: 5;
+    position: relative;
+  }
+  &__moreWrap{
+    text-align: center;
+    position: relative;
+    top: -5px;
+    left: -20px;
+  }
+  &__more{
+    text-decoration: none;
+    color: @color-hover;
+    font-family: @font-default;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.17em;
+  }
+  &__more:hover{
+    color: @color-default;
+  }
+  &__blockRight{
+    width: 650px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    padding: 0 24px 0 24px;
+  }
+  &__rightItem{
+    min-height: 185px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 0 0 205px;
+    margin: 0 0 18px 0;
+  }
+  &__img{
+    position: absolute;
+    top: -24px;
+    left: 0;
+    z-index: 0;
+  }
+}
+
+div[class~="news__rightItem"]:nth-child(even){
+  padding: 0 205px 0 0;
+  .news__img{
+    left: auto;
+    right: 0;
+  }
+}
+
+.news__blockRight .news__moreWrap{
+  top: -10px;
+  left: 2px;
+}

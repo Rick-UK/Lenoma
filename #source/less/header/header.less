@@ -1,0 +1,366 @@
+.header{
+  width: @desktop-width;
+  background-color: @bg-color-default;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+
+  &__top{
+    width: @desktop-width;
+    border-bottom: 1px solid @shadow-color;
+    padding: 0 70px 0 70px;
+    box-sizing: border-box;
+    display: flex;
+  }
+  &__topNav{
+    min-width: 677px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  &__topNavList{
+    list-style: none;
+  }
+  &__topNavLink{
+    text-decoration: none;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 0 5px 0 5px;
+  }
+  &__topNavLink:hover{
+    color: @color-hover;
+  }
+  &__topPrivatLink{
+    text-decoration: none;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 0 43px 0 41px;
+    border-left: 1px solid @shadow-color;
+  }
+  &__topPrivatLink:hover{
+    color: @color-hover;
+  }
+  &__topFavorite{
+    position: relative;
+  }
+  &__topFavoriteLink{
+    text-decoration: none;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 0 15px 0 45px;
+    border-left: 1px solid @shadow-color;
+  }
+  &__topFavoriteLink:hover{
+    color: @color-hover;
+  }
+  &__topFavoriteSum{
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    background-color: @color-hover;
+    width: 15px;
+    height: 15px;
+    background-position: 0 0;
+    text-align: center;
+    line-height: 15px;
+    color: white;
+    font-family: @font-default;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 50%;
+  }
+}
+
+.header{
+  &__middle{
+    display: flex;
+    justify-content: space-between;
+    min-height: 142px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 70px 0 70px;
+    overflow: hidden;
+  }
+  &__middleLogo{
+    position: relative;
+    top:-5px;
+    left: -2px;
+  }
+  &__middleSearchContact{
+    width: 800px;
+    position: relative;
+    top:-11px;
+    left: -6px;
+  }
+  &__middleSearch{
+    margin: 0 0 27px 0;
+  }
+  &__middleForm{
+    position: relative;
+  }
+  &__middleInput{
+    height: 55px;
+    width: 800px;
+    border: none;
+    border-bottom: 2px solid @color-hover;
+    cursor: pointer;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding: 0 20px 0 0;
+  }
+  &__middleInput:focus{
+    outline: none;
+  }
+  &__middleInput:hover ~ .header__middleButton{
+    opacity: 0.6;
+  }
+  &__middleInput::placeholder{
+    font-variant: small-caps;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.18em;
+  }
+
+  &__middleButtonText{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  &__middleButton{
+    position: absolute;
+    top: 60%;
+    right: -3px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url("../img/Search.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__middleContact{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  &__middleContactLink{
+    text-decoration: none;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    font-variant: small-caps;
+  }
+  &__middleContactLink:hover{
+  color: @color-hover;
+  }
+
+  &__middleContactTime{
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.065em;
+    font-variant: small-caps;
+  }
+
+  &__middleBasketLink{
+    display: block;
+    width: 90px;
+    height: 84px;
+    background-color: @color-hover;
+    background-image: url("../img/Basket.png");
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    position: relative;
+    text-decoration: none;
+    top: -2px;
+    left: 0;
+  }
+  &__middleContactLinkCall{
+    padding: 0 0 0 28px;
+    background-image: url(../img/Call.png);
+    background-repeat: no-repeat;
+    background-position: 3px 7px;
+    background-size: 9px 11px;
+    letter-spacing: 0.18em;
+  }
+  &__middleContactLinkMail{
+    padding: 0 0 0 31px;
+    background-image: url(../img/Mail.png);
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    background-size: 14px 11px;
+    position: relative;
+    left: 2px;
+    letter-spacing: 0.18em;
+  }
+  &__middleContactTimeIcon{
+    padding: 0 0px 0 35px;
+    background-image: url(../img/Time.png);
+    background-repeat: no-repeat;
+    background-position: 2px 6px;
+    background-size: 14px 14px;
+  }
+
+  &__middleBasketSum{
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    color: white;
+    font-family: @font-default;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+  }
+}
+
+.header{
+  &__nav{
+    width: @desktop-width;
+    background-color: @color-default;
+    padding: 0 0 0 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0 40px 0 0;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+  &__navList{
+    list-style: none;
+    position: relative;
+    padding: 5px 0 5px 0 ;
+  }
+
+  &__navLink{
+    text-decoration: none;
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 50px;
+    padding: 0 5px 0 5px;
+  }
+
+  &__navList:hover .header__submenu{
+    display: block;
+  }
+  &__navList:hover .header__navLink{
+    color: @color-hover;
+  }
+
+  &__submenu{
+    display: none;
+    position: absolute;
+    top: 58px;
+    left: -32px;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 12px 28px 20px 28px;
+    border-top: 4px solid @color-hover;
+    background-color: @bg-color-default;
+    box-shadow: 17px 29px 49px rgba(0, 0, 0, 0.1);
+  }
+  &__submenuList{
+    list-style: none;
+  }
+  &__submenuLink{
+    text-decoration: none;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 36px;
+    white-space:nowrap;
+
+  }
+  &__submenuLink:hover{
+    color: @color-hover;
+  }
+  &__navMenuSale{
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+  &__navListSale{
+    background-color: #c16774;
+    width: 160px;
+    list-style: none;
+    text-align: center;
+    padding: 5px 15px 5px 5px;
+    box-sizing: border-box;
+    position: relative;
+    word-wrap: break-word;
+  }
+  &__navLinkSale:hover{
+    color: @color-default;
+  }
+  &__navListSale:hover .header__submenu{
+    display: block;
+  }
+  &__submenuSale{
+    top:58px;
+    left: auto;
+    right: 0;
+  }
+}
+
+li[class~="header__topNavList"]:first-of-type .header__topNavLink{
+padding: 0 5px 0 0;
+}
+li[class~="header__topNavList"]:last-of-type .header__topNavLink{
+padding: 0 0 0 5px;
+}
+
+li[class~="header__navList"]:first-of-type .header__navLink{
+padding: 0 5px 0 0;
+}
+li[class~="header__navList"]:last-of-type .header__navLink{
+padding: 0 0 0 5px;
+}
+
+
+li[class~="header__navList"]:nth-last-of-type(1) .header__submenu{
+  left: auto;
+  right: -40px;
+}

@@ -1,0 +1,165 @@
+.special{
+  width: @desktop-width;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 70px 0 70px;
+  &__title{
+    text-align: center;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.11em;
+    margin: 82px auto 50px auto;
+    box-sizing: border-box;
+    padding: 0 0 28px 0 ;                   //change
+    width: 420px;                           //change
+    text-align: center;
+    border-bottom: 2px solid @color-hover;  //change
+  }
+  // &__titleBorder{                        //change
+  //   padding: 0 100px 15px 100px;
+  //
+  // }
+  &__wrap{
+    width: @content-width;
+  }
+  &__item{
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 26px 0 0 0;          //change
+
+  }
+  &__itemTwo{
+    position: relative;
+    top:-13px;         //change
+    left: 5px;
+  }
+  &__itemThree{
+    position: relative;
+    top:0;
+    left: 9px;
+  }
+  &__itemFour{
+    position: relative;
+    top: -23px;              //change
+    left: 15px;
+  }
+  .special__item .special__img{
+    width: 234px;
+    height: 234px;
+  }
+  .special__item .special__imgTwo{
+    width: 235px;
+    height: 236px;
+    position: relative;
+    top: 12px;
+    left: 0px;
+    margin: 0 0 12px 0;         //change
+  }
+  .special__item .special__imgThree{
+    width: 234px;
+    height: 234px;
+    position: relative;
+    top: 0px;         //change
+    left: 0px;
+    margin: 0 0 0 0;     //change
+  }
+  .special__item .special__imgFour{
+    width: 208px;
+    height: 256px;
+    position: relative;
+    top: 12px;
+    left: 0px;
+    margin: 0 0 1px 0;             //change
+  }
+  &__productName{
+    margin: 37px 0 0 0;                 //change
+    text-align: center;             //change
+  }
+  &__productNameLink{
+    text-decoration: none;
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 16px;
+    line-height: 16px;                 //change
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+
+  }
+  &__brandName{
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin: 18px 0 0 0;               //change
+  }
+  &__brandNameThree{
+    margin: 12px 0 0 0;               //change
+  }
+  &__description{
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 0 0 16px 0;
+    text-align: center;
+  }
+  &__allPrice{
+    display: flex;
+  }
+  &__previousPrice{
+    color: @color-hover-two;
+    font-family: @font-default;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin: 0 25px 0 0;
+  }
+  &__price{
+    color: @color-default;
+    font-family: @font-default;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 0 0 0;
+  }
+  &__sale{
+    width: 47px;
+    height: 22px;
+    background-color: @color-hover-two;
+    position: absolute;
+    top:44px;
+    left: 0;
+    color: @bg-color-default;
+    font-family: @font-default;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+}
+
+.special .previous{
+
+  top: -256px;
+  left:-15px;
+}
+.special .next{
+
+  top: -256px;
+  right: -1294px;
+}
